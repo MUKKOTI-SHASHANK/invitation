@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruha Pravesh Invitation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        /* Custom Styles */
+        /* body {
+            background-image: url('https://res.cloudinary.com/dxp7znz6z/image/upload/v1730369933/background_pvb07s.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        } */
+        .invitation-card {
+            background-image: url('https://res.cloudinary.com/dxp7znz6z/image/upload/v1730370239/birthday-invitation-background-template-design_mvwlh4.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #faf2e2;
+            padding: 20px;
+            width: 500px;
+            border: 2px solid #e5d6c4;
+            border-radius: 8px;
+            text-align: center;
+            font-family: serif;
+            color: #5a4e3e;
+            position: relative;
+        }
+        .ganesh-icon {
+            font-size: 50px;
+            color: #d4a573;
+        }
+        .header-text {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .title-text {
+            font-size: 36px;
+            font-family: "Brush Script MT", cursive;
+            color: #5a4e3e;
+        }
+        .qr-code {
+            margin-top: 20px;
+            align-items: center;
+            align-content: center;    
+        }
+        .footer-text {
+            color: #7b6d5b;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen bg-[#fff8e1]">
+    <div id="invitation" class="invitation-card">
+        <div class="ganesh-icon">🕉️</div>
+        <p> </p>
+        <p class="header-text">YOU'RE CORDIALLY INVITED TO THE</p>
+        <p class="title-text">Gruha Pravesh</p>
+        <p class="header-text">Ceremony</p>
+        <p class="mt-4 text-lg">of Teja & Vanitha's new home on</p>
+        <p class="text-md mt-2">17th Nov, 2024</p>
+        <p class="text-md">9:00 AM onwards</p>
+        
+        <div class="mt-4">
+            <p class="font-semibold">Venue:</p>
+            <p>Flat 102, Sri Aditya's Subha Nivas</p>
+            <p>Plot no-68, Incois Rd, Kakatiya Hills,</p>
+            <p>ALEAP Industrial Area, Gajularamaram,</p>
+            <p>Hyderabad, Telangana 500072</p>
+            <p>Contact :  +91 9492051013</p>
+        </div>
+
+        <a href="https://maps.app.goo.gl/UoHAT3k8msmr9GAH8" target="_blank" class="text-blue-600 underline mt-4 block">
+            View location on Google Maps
+        </a>
+
+        <div class="qr-code flex justify-center items-center">
+            <img src="https://res.cloudinary.com/dxp7znz6z/image/upload/v1730369306/house_location_jgspkt.jpg" alt="QR Code for Google Maps" width="100px" >
+
+        </div>
+
+        <p class="footer-text">Scan the QR code or click the link to view the location on Google Maps</p>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script>
+        function downloadImage() {
+            html2canvas(document.getElementById('invitation')).then(canvas => {
+                const link = document.createElement('a');
+                link.href = canvas.toDataURL('image/png');
+                link.download = 'Gruha_Pravesh_Invitation.png';
+                link.click();
+            });
+        }
+    </script>
+</body>
+</html>
